@@ -3,9 +3,10 @@ from image import validate, processImage
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
 
 def create_app():
+    load_dotenv()
+
     app = Flask(import_name=__name__)
     app.secret_key = os.getenv("FLASK_KEY", None)
 
