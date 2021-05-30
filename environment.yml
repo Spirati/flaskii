@@ -1,0 +1,14 @@
+name: flaskii
+channels:
+  - defaults
+dependencies:
+  - colorama=0.4.4
+  - flask=1.1.2
+  - pillow=8.2.0
+  - pip=21.1.1
+  - python=3.9.5
+  - setuptools=52.0.0
+  - wheel=0.36.2
+  - pip:
+    - gunicorn==20.1.0
+    - python-dotenv=0.17.1
