@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FLASKII</title>
+        <style>
+            #ascii {
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/">Return home</a>
+        <hr/>
+        <h1>Processed image</h1>
+        <div id="ascii">
+            {% for line in image %}
+            {{ line }}<br/>
+            {% endfor %}
+        </div>
+        <hr/>
+        <footer>
+            <i>Written and maintained by Lynnux. View the <a href="">source code</a> or come talk to me on <a href="https://twitter.com/_lynnux">Twitter</a>!</i>
+        </footer>
+    </body>
+</html>

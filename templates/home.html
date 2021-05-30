@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FLASKII</title>
+        <style>
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FLASKII - the world's <span class="error">worst</span> ASCII converter ever</h1>
+        <form action="/process" method="post" enctype="multipart/form-data">
+            {% if get_flashed_messages() %}
+            <span class="error">Bad image content. Please try again!</span> <br/>
+            {% endif %}
+            <label for="img">Upload an image here:</label>
+            <input type="file" accept="image/*" name="img" id="img">
+
+            <input type="submit">
+        </form>
+        <hr/>
+        <footer>
+            <i>Written and maintained by Lynnux. View the <a href="">source code</a> or come talk to me on <a href="https://twitter.com/_lynnux">Twitter</a>!</i>
+        </footer>
+    </body>
+</html>
